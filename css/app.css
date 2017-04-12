@@ -8,6 +8,14 @@ footer {
   align-items: center;
 }
 
+h2, h4 {
+  color: #000000;
+  background-color: rgb(255,255,255);
+  padding: 20px 0px 0px 0px;
+  text-align: center;
+  font-family: 'Barrio', cursive;
+}
+
 h1 {
   font-size: 80px;
   color: #000000;
@@ -19,6 +27,7 @@ h1 {
 
 p {
   font-family: 'Josefin Sans', sans-serif;
+  font-size: 20px;
 }
 
 nav {
