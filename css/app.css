@@ -1,3 +1,9 @@
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 h1 {
   font-size: 80px;
   color: #000000;
@@ -7,11 +13,16 @@ h1 {
   font-family: 'Barrio', cursive;
 }
 
+p {
+  font-family: 'Josefin Sans', sans-serif;
+}
+
 nav {
   margin: 5px 0px 0px 0px;
   text-align: center;
   font-family: 'Josefin Sans', sans-serif;
   text-transform: uppercase;
+  background-color: white;
 }
 
 /*body {
