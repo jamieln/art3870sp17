@@ -1,0 +1,49 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>asdf</title>
+
+<!-- <style media="screen"> or <style> either one works-->
+    <style>
+
+    #bounce{
+      background: red;
+      height: 100px;
+      width: 100px;
+      border-radius: 50%;
+
+      position: relative;
+      left: 150px;
+      top: 100px;
+      /*animation-name: bouncethat;
+      animation-duration: 3s;*/
+      /*animation-timing-function: linear;*/ /*ease or linear*/
+      /*animation-iteration-count: infinite;*/
+    }
+
+    #bounce:hover{
+      animation-name: bouncethat;
+      animation-duration: 3s;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+    }
+
+    @keyframes bouncethat { /*keyframe animation*/
+      0% {top:100px;} /*can leave 0% and 100% off if wanted to and just leave 50% b/c 0% and 100% is implied in this case*/
+      50% {top:107px; opacity: 0.3;
+      background: green; border-radius:10%;}
+      100% {top:100px;}
+
+    }
+
+    </style>
+  </head>
+  <body>
+
+    <div id="bounce">
+
+    </div>
+
+  </body>
+</html>
