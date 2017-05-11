@@ -1,0 +1,40 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Animation Demo</title>
+  </head>
+  <style media="screen">
+
+    #zoetrope{
+      /*border:1px solid black;*/
+      border:3px solid red; /*for testing*/
+      height:610px; /*size of each individal image*/
+      width:610px;
+      background: url("muybridge.png") /*insert image file in ()*/ 0 0;
+      animation: muybridge .8s steps(12)/*dependent on number of frames*/ infinite;
+      animation-play-state: running;
+    }
+
+  @keyframes muybridge/*identifier*/{
+    100%{
+      background-position: 7320px; /*whole width of strip*/
+    }
+  }
+
+  #zoetrope:hover{animation-play-state: paused/*or running*/;
+  }
+
+  </style>
+  <body>
+
+    <div id="zoetrope">
+
+    </div>
+
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/what-input.js"></script>
+    <script src="js/vendor/foundation.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
