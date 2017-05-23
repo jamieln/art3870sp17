@@ -1,0 +1,43 @@
+body{
+  height: 10000px;
+  /*https://jsbin.com/kixorof/edit?html,css,output horizontal longscrolling*/
+  /*https://jsbin.com/tabucol/1/edit?html,css,ouput vertical longscrolling*/
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#71f2e3+0,71f2e3+5,acdfe8+5,85d7e5+17,27c8e5+44,006ec9+100 */
+  /*background-color:*/
+  background-image:
+  url("bg_frontwave.png"),
+  url("imonaship.png"),
+  url("bg_backwave.png"),
+  linear-gradient(to bottom, #71f2e3 0%,#71f2e3 5%,#acdfe8 5%,#85d7e5 17%,#27c8e5 44%,#006ec9 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  background-repeat:
+    repeat-x,
+    no-repeat,
+    repeat-x,
+    repeat;
+  background-position:
+    0 4.8%, /*x y*/ /*front wave*/
+    600px 3.4%,
+    0 4.4%, /*back wave*/
+    top left;
+
+  animation: 10s waves ease-in-out infinite;
+}
+
+@keyframes waves {
+  50%{
+    background-position:
+      100px 4.8%,
+      650px 3.4%,
+      -100px 4.35%,
+      top left;
+    }
+  }
+
+#wrapper{
+  /*border: 1px solid red;*/ /*test*/
+  width: 800px;
+  height: 10000px;
+  background-image: url("dark_overlay.png"); /*rememebr to do ("../img/dark-overlay.png") if in diff folder*/
+  background-repeat: no-repeat;
+  background-position: 0 400px;
+}

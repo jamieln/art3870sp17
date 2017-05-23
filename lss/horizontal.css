@@ -1,0 +1,25 @@
+body{
+  height:800px;
+  width:10000px;
+
+background-color: #2a2b18;
+background-image:
+linear-gradient(to bottom, #32defc 0%,#25e0ea 70%,#45bc1e 70%,#45bc1e 70%,#352903 88%,#352903 88%,#2a2b18 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+
+background-repeat:
+repeat-x,
+repeat-x,
+repeat;
+background-position:
+3px 5.25%,
+0 4.9%,
+top left
+;
+}
+
+#wrapper{
+  border:10px solid red;
+  width:800px;
+  height:10000px;
+  background-image: url("dark-overlay.png");
+}
